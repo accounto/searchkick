@@ -238,7 +238,7 @@ module Searchkick
 
         unless below62
           settings[:index] = {
-            max_ngram_diff: 49,
+            max_ngram_diff: 2,
             max_shingle_diff: 4
           }
         end
