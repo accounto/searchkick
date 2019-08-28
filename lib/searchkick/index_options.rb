@@ -128,12 +128,12 @@ module Searchkick
               searchkick_edge_ngram: {
                 type: "edgeNGram",
                 min_gram: 1,
-                max_gram: 50
+                max_gram: 1
               },
               searchkick_ngram: {
                 type: "nGram",
                 min_gram: 1,
-                max_gram: 50
+                max_gram: 1
               },
               searchkick_stemmer: {
                 # use stemmer if language is lowercase, snowball otherwise
@@ -238,7 +238,7 @@ module Searchkick
 
         unless below62
           settings[:index] = {
-            max_ngram_diff: 2,
+            max_ngram_diff: 1,
             max_shingle_diff: 4
           }
         end
