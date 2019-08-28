@@ -123,7 +123,7 @@ module Searchkick
               },
               searchkick_suggest_shingle: {
                 type: "shingle",
-                max_shingle_size: 5
+                max_shingle_size: 3
               },
               searchkick_edge_ngram: {
                 type: "edgeNGram",
@@ -239,7 +239,7 @@ module Searchkick
         unless below62
           settings[:index] = {
             max_ngram_diff: 1,
-            max_shingle_diff: 4
+            max_shingle_diff: 3
           }
         end
 
